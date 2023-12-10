@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Patient's Data</title>
+    <link rel="stylesheet" href="{% static "CSS/edit.css" %}">
+</head>
+<body>
+<form action="/update/{{res.id}}" method="post" class="dataform">
+{% csrf_token %}
+<p><label for="id_patient_id" id="label1">patient_id:</label> <input type="text" name="patient_id" maxlength="10" required id="id_patient_id" value="{{res.patient_id}}" class="input1"></p>
+<p><label for="id_firstname" id="label2">firstname:</label> <input type="text" name="firstname" maxlength="30" required id="id_firstname" value="{{res.firstname}}" class="input2"></p>
+<p><label for="id_lastname" id="label3">lastname:</label> <input type="text" name="lastname" maxlength="30" required id="id_lastname" value="{{res.lastname}}" class="input3"></p>
+<p><label for="id_treated_for" id="label4">treated_for:</label> <input type="text" name="treated_for" maxlength="100" required id="id_treated_for" value="{{res.treated_for}}" class="input4"></p>
+<p><label for="id_prescription" id="label5">prescription:</label> <input type="text" name="prescription" maxlength="100" required id="id_prescription" value="{{res.prescription}}" class="input5"></p>
+<p><label for="id_prescription_type" id="label6">prescription_type:</label> <input type="text" name="prescription_type" maxlength="100" required id="id_prescription_type" value="{{res.prescription_type}}" class="input6"></p>
+<p><label for="id_previous_history" id="label7">previous_history:</label> <input type="text" name="previous_history" maxlength="100" required id="id_previous_history" value="{{res.previous_history}}" class="input7"></p>
+<p><label for="id_emergency_contact" id="label8">emergency_contact:</label> <input type="text" name="emergency_contact" maxlength="10" required id="id_emergency_contact" value="{{res.emergency_contact}}" class="input8"></p>
+<p><label for="id_health_insurance" id="label9">health_insurance:</label> <input type="text" name="health_insurance" maxlength="10" required id="id_health_insurance" value="{{res.health_insurance}}" class="input9"></p>
+<button type="submit" id="button1">update</button>
+</form>
+</body>
+</html>

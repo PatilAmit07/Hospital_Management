@@ -1,0 +1,80 @@
+body{
+    background-color:#E2D1F9;
+    font-family:sans-serif;
+}
+.datatable{
+    width:100%;
+    text-align:center;
+}
+th,td{
+    border:2px solid black;
+    border-radius:10px;
+}
+#headings{
+    background-color:black;
+    color:white;
+}
+#alwaysbold{
+    font-weight:bold;
+    font-size:18px;
+    background-color:lightgoldenrodyellow;
+}
+#alwaysbold:hover{
+    background-color:red;
+    color:white;
+    transition:0.6s;
+    transform:scale(1.15);
+    border-color:#CCFF00;
+}
+#button1{
+    box-sizing:border-box;
+    width:130px;
+    height:50px;
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:21px;
+    position:absolute;
+    top:600px;
+    left:720px;
+    border-radius:40px;
+    outline:none;
+    background-color:black;
+    padding:5px;
+    cursor:pointer;
+    color:white;
+    border:none;
+}
+#button1:hover{
+    background-color:green;
+}
+#givemedicine{
+    background-color:lightsalmon;
+    font-weight:bold;
+}
+#givemedicine:hover{
+    background-color:springgreen;
+    transition:0.6s;
+    transform:scale(1.15);
+    border-color:#CCFF00;
+}
+#unique{
+    background-color:lightcyan;
+}
+#medicinetype{
+    background-color:#CBD18F;
+}
+#patientidgiven{
+    background-color:#8AAAE5;
+}
+#insurance{
+    background-color:#FFBE7B;
+}
+#name{
+    background-color:#C5FAD5;
+}
+#actions{
+    background-color:#FFFFD2;
+}
+#contact{
+    background-color:#A7BEAE;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="{% static "CSS/LoginPage.css" %}">
+
+</head>
+<body>
+<center>
+    <form method="post" action="SecondPage" class="loginform">
+    {%csrf_token%}
+        <h1 id="heading1">Register or LogIn </h1>
+        <div class="logininfo">
+            {{forms.as_p}}
+        </div>
+       <input type="submit" value="LogIn" id="button1">
+    </form>
+
+</center>
+</body>
+</html>

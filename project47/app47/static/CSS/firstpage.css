@@ -1,0 +1,105 @@
+#heading1{
+    color:white;
+    background-color:lightblue;
+    font-family:sans-serif;
+    font-size:40px;
+    box-sizing:border-box;
+    width:550px;
+    height:130px;
+    padding:42px;
+    position:absolute;
+    top:130px;
+    right:0px;
+    border-top-left-radius:60px;
+    border-bottom-left-radius:60px;
+}
+#heading2{
+    color:white;
+    background-color:lightpink;
+    font-family:sans-serif;
+    font-size:40px;
+    box-sizing:border-box;
+    width:550px;
+    height:130px;
+    padding:40px;
+    position:absolute;
+    top:330px;
+    right:0px;
+    border-top-left-radius:60px;
+    border-bottom-left-radius:60px;
+}
+#heading3{
+    color:white;
+    background-color:lightgrey;
+    font-family:sans-serif;
+    font-size:40px;
+    box-sizing:border-box;
+    width:550px;
+    height:130px;
+    padding:38px;
+    position:absolute;
+    top:530px;
+    right:0px;
+    border-top-left-radius:60px;
+    border-bottom-left-radius:60px;
+}
+body{
+    background-image:url('https://informationage-production.s3.amazonaws.com/uploads/2022/10/AdobeStock_142899275-1-scaled.jpeg');
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+#heading1:hover{
+    background-color:black;
+    transform:scale(1.15);
+    border-style:solid;
+    border-size:2px;
+    border-color:aqua;
+    transition:0.4s;
+    color:lightgrey;
+}
+#heading2:hover{
+    background-color:black;
+    transform:scale(1.15);
+    border-style:solid;
+    border-size:2px;
+    border-color:aqua;
+    transition:0.4s;
+    color:lightgrey;
+}
+#heading3:hover{
+    background-color:black;
+    transform:scale(1.15);
+    border-style:solid;
+    border-size:2px;
+    border-color:aqua;
+    transition:0.4s;
+    color:lightgrey;
+}
+html{
+    scroll-behaviour:smooth;
+}
+.container{
+    background-color:red;
+    color:white;
+    font-family:sans-serif;
+    box-sizing:border-box;
+    width:120px;
+    height:50px;
+    font-size:25px;
+    padding:0px;
+    position:absolute;
+    top:50px;
+    right:0px;
+}
+#para1{
+    position:absolute;
+    top:-15px;
+    right:15px;
+}
+.adminimage{
+    position:absolute;
+    top:0px;
+    right:500px;
+
+}

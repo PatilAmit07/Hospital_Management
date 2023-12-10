@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor's Data of Patients</title>
+    <link rel="stylesheet" href="{% static "CSS/SecondPage.css" %}">
+</head>
+<body>
+<form action="SecondPage" method="post" class="dataform">
+{% csrf_token %}
+  {{forms.as_p}}
+ <button type="submit">submit</button>
+</form>
+
+
+<form action="Patientsdata">
+    <input type="submit" value="show" id="button2">
+</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>webpage 1</title>
+    <link rel="stylesheet" href="{% static "CSS/firstpage.css" %}">
+</head>
+<body>
+<center>
+  <form action="LoginPage" method="post">
+    <a href="LoginPage">
+    <h1 id="heading1"> For Doctor's </h1>
+    </a>
+    <br>
+    <br>
+    <br>
+    <a href="LoginPageNurse">
+    <h1 id="heading2"> For Nurse/Attendant's </h1>
+    </a>
+    <br>
+    <br>
+    <br>
+    <a href="LoginPage">
+    <h1 id="heading3"> For Patient's </h1>
+    </a>
+    <div class="container">
+      <a href="admin">
+         <p id="para1">admin</p>
+<!--      <div class="adminimage">-->
+<!--        <img src="{% static "images/admin1.png"%}  ">-->
+<!--      </div>-->
+      </a>
+    </div>
+  </form>
+
+</center>
+</body>
+</html>

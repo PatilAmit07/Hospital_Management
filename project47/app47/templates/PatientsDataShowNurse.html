@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Patient's Data</title>
+    <link rel="stylesheet" href="{% static "CSS/PatientsDataShowNurse.css"%}">
+</head>
+<body>
+<table cellspacing="3px" cellpadding="7px" class="datatable">
+    <tr id="headings">
+        <th> ID </th>
+        <th> PATIENT ID </th>
+        <th> FIRSTNAME </th>
+        <th> LASTNAME </th>
+<!--        <th> TREATED FOR </th>-->
+<!--        <th> DATE ADMITTED </th>-->
+        <th> PRESCRIPTION </th>
+<!--        <th> PRESCRIPTION TYPE </th>-->
+<!--        <th> EXPECTED SIGN-OFF </th>-->
+<!--        <th> PREVIOUS HISTORY </th>-->
+        <th> EMERGENCY CONTACT </th>
+        <th> HEALTH INSURANCE </th>
+        <th> ACTION </th>
+    </tr>
+   {% for i in res %}
+    <tr>
+        <th id="unique">{{i.id}}</th>
+        <td id="patientidgiven">{{i.patient_id}}</td>
+        <td id="name">{{i.firstname}}</td>
+        <td id="name">{{i.lastname}}</td>
+<!--        <td>{{i.treated_for}}</td>-->
+<!--        <td>{{i.date_admitted}}</td>-->
+        <td id="givemedicine">{{i.prescription}}</td>
+<!--        <td>{{i.prescription_type}}</td>-->
+<!--        <td>{{i.expected_sign_off}}</td>-->
+<!--        <td>{{i.previous_history}}</td>-->
+        <td id="contact">{{i.emergency_contact}}</td>
+        <td id="insurance">{{i.health_insurance}}</td>
+
+        <td id="actions"> <a href="/editnurse/{{i.id}}">edit</a>
+        <a href="/deletenurse/{{i.id}}">delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<form action="SecondPageNurse">
+    <button type="submit" id="button1">Home</button>
+</form>
+</body>
+</html>

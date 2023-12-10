@@ -1,0 +1,53 @@
+body{
+    background-color:#F96167;
+    align-items:center;
+    justify-content:center;
+}
+.dataform{
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:20px;
+    box-sizing:border-box;
+
+}
+html{
+    scroll-behaviour:smooth;
+}
+#button1{
+    background-color:black;
+    font-family:sans-serif;
+    font-weight:bold;
+    box-sizing:border-box;
+    position:absolute;
+    top:600px;
+    left:610px;
+    width:130px;
+    height:50px;
+    border:none;
+    cursor:pointer;
+    font-size:22px;
+    color:white;
+    border-radius:30px;
+}
+#button1:hover{
+    background-color:green;
+}
+#button2{
+    background-color:black;
+    font-family:sans-serif;
+    font-weight:bold;
+    box-sizing:border-box;
+    position:absolute;
+    top:600px;
+    left:780px;
+    width:130px;
+    height:50px;
+    border:none;
+    cursor:pointer;
+    font-size:22px;
+    color:white;
+    border-radius:30px;
+}
+#button2:hover{
+    background-color:green;
+}

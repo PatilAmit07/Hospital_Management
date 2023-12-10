@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Nurse's Data of Patients</title>
+    <link rel="stylesheet" href="{% static "CSS/SecondPageNurse.css" %}">
+</head>
+<body>
+<form action="SecondPageNurse" method="post" class="dataform">
+{% csrf_token %}
+  {{forms.as_p}}
+ <button type="submit">submit</button>
+</form>
+
+<form action="Patientsdatanurse">
+    <input type="submit" value="show" id="button2">
+</form>
+</body>
+</html>

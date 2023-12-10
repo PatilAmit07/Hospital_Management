@@ -1,0 +1,47 @@
+body{
+    background-image:url('https://cdn.wallpapersafari.com/62/26/skDxEZ.jpg');
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+#heading1{
+    color:white;
+    font-family:sans-serif;
+    font-size:60px;
+    position:absolute;
+    top:80px;
+    left:560px;
+}
+.logininfo{
+    color:white;
+    font-family:sans-serif;
+    position:absolute;
+    font-size:25px;
+    top:300px;
+    left:630px;
+    text-align:center;
+}
+#button1{
+    color:white;
+    background-color:green;
+    position:absolute;
+    top:450px;
+    left:725px;
+    box-sizing:border-box;
+    width:100px;
+    height:50px;
+    font-family:sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    border:none;
+    border-radius:25px;
+}
+
+#button1:hover{
+    background-color:lightgreen;
+    cursor:pointer;
+    color:black;
+    border:black;
+    transition:1s;
+}
+
+
